@@ -28,7 +28,7 @@ function App() {
       console.log("Parsed JSON Data:", parsedData);
 
       // Call the REST API
-      const res = await axios.post("http://localhost:5000/bfhl", parsedData); // Corrected URL
+      const res = await axios.post("https://bajajbackend-alpha.vercel.app/bfhl", parsedData); // Corrected URL
       setResponse(res.data);
       setShowDropdown(true);
     } catch (err) {
